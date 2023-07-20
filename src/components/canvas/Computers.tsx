@@ -14,7 +14,7 @@ const Computers: FC<{isMobile: boolean}> = ({isMobile}) => {
         <pointLight intensity={1} />
         <spotLight position={[-20, 50, 10]}
                    angle={0.12}
-                   prenumbra={1}
+                   penumbra={1}
                    intensity={1}
                    castShadow={true}
                    shadow-mapSize={1024}

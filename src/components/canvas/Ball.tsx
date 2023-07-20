@@ -10,10 +10,12 @@ import {
 
 import CanvasLoader from "../Loader";
 
-const Ball = (props) => {
+const Ball = (props: {imgUrl: string}) => {
     const [decal] = useTexture([props.imgUrl]);
 
     return (
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
         <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
             <ambientLight intensity={0.25} />
             <directionalLight position={[0, 0, 0.05]} />
@@ -37,7 +39,7 @@ const Ball = (props) => {
     );
 };
 
-const BallCanvas = ({ icon }) => {
+const BallCanvas = ({ icon }: {icon: string}) => {
     return (
         <Canvas
             frameloop='demand'

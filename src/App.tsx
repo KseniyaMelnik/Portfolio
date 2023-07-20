@@ -1,5 +1,5 @@
 import {BrowserRouter} from "react-router-dom";
-import {About, Contact, Experience, Feedbacks, Footer, Hero, Navbar, Tech, Works} from "./components";
+import {About, Contact, Experience, Footer, Hero, Navbar, Tech, Works} from "./components";
 import {StarsCanvas} from "./components/canvas";
 
 const App = () => {

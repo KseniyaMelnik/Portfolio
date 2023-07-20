@@ -2,6 +2,7 @@
 declare const VITE_APP_EMAILJS_SERVICE_ID : string
 declare const VITE_APP_EMAILJS_TEMPLATE_ID : string
 declare const VITE_APP_EMAILJS_PUBLIC_KEY : string
+declare module 'maath/random/dist/maath-random.esm.js'
 
 
 //const VITE_APP_EMAILJS_SERVICE_ID = "service_7ttyx4e"

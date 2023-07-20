@@ -4,8 +4,17 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
+import {FC} from "react";
 
-const FeedbackCard = ({
+type FeedbackCardPropsType = {
+    index: number,
+    testimonial: string,
+    name: string,
+    designation: string,
+    company: string,
+    image: string
+}
+const FeedbackCard: FC<FeedbackCardPropsType> = ({
                         index,
                         testimonial,
                         name,

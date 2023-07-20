@@ -1,16 +1,18 @@
 import { useState, useRef, Suspense } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import {Canvas, RootState, useFrame} from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm.js";
 
-const Stars = (props) => {
+const Stars = (props: any) => {
   const ref = useRef();
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     //@ts-ignore
 
     const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.2 }));
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
+    useFrame((state: RootState, delta) => {
 
-  useFrame((state, delta) => {
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       //@ts-ignore
 

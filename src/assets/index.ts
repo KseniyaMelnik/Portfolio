@@ -23,10 +23,11 @@ import threejs from "./tech/threejs.svg";
 
 import inno from "./company/inno.png";
 import roy from "./company/roy.svg";
+import rs from "./company/rs.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import wildlife from "./wildlife.png";
+import coffee from "./coffeMarket.jpg";
+import chuckNorris from "./chuck_norris.png";
 
 import githubSVG from "./socials/github.svg";
 import linkedin from "./socials/linkedin.svg";
@@ -58,9 +59,10 @@ export {
     threejs,
     inno,
     roy,
-    carrent,
-    jobit,
-    tripguide,
+    rs,
+    wildlife,
+    coffee,
+    chuckNorris,
     githubSVG,
     linkedin,
     telegram,

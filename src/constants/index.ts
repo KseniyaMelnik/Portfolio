@@ -16,14 +16,15 @@ import {
     docker,
     roy,
     inno,
-    carrent,
-    jobit,
-    tripguide,
+    chuckNorris,
     threejs,
     githubSVG,
     linkedin,
     telegram,
-    codewars
+    codewars,
+    wildlife,
+    rs,
+    coffee
 } from "../assets";
 
 export type NavLinkType = {
@@ -121,7 +122,7 @@ const experiences = [
         company_name: "Inno Menu",
         icon: inno,
         iconBg: "#383E56",
-        date: "Des 2022 - April 2023",
+        date: "Nov 2022 - April 2023",
         points: [
             "Developing new components and pages using React and Redux",
             "Working with RESTful APIs for features like registration, login, and pagination.",
@@ -144,6 +145,20 @@ const experiences = [
             "Working with the server-side of the application, including handling CRUD operations using AJAX calls to APIs, and processing data received from the server",
             "Debugging server-side and client-side code, and addressing any errors or issues that arise",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products."
+        ],
+    },
+    {
+        title: "Mentor / Javascript, Typescript, React",
+        company_name: "The Rolling Scopes School",
+        icon: rs,
+        iconBg: "#383E56",
+        date: "May 2023 - Present",
+        points: [
+            "Conducting one-on-one and group mentoring sessions with students to provide guidance and support in learning the programming languages and frameworks",
+            "Assisting students in solving coding problems and debugging their code.",
+            "Reviewing students' code and providing feedback on its quality, efficiency, and adherence to industry standards.",
+            "Encouraging and motivating students to achieve their goals and pursue careers in programming.",
+            "Keeping up-to-date with the latest developments and trends in the programming languages and frameworks and sharing this knowledge with students."
         ],
     },
 ];
@@ -177,12 +192,12 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Wildlife",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Full stack application for a wildlife rescue centre with an administration panel for adding blog posts, animal pages and viewing sponsorship applications.",
         tags: [
             {
-                name: "react",
+                name: "next.js",
                 color: "blue-text-gradient",
             },
             {
@@ -194,13 +209,13 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
-        source_code_link: "https://github.com/",
+        image: wildlife,
+        source_code_link: "https://github.com/KseniyaMelnik/wildlife",
     },
     {
-        name: "Job IT",
+        name: "Coffee shop",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "Web application for the coffee shop with different types of filtering, sorting, saving filters and settings. A shopping cart is also implemented.",
         tags: [
             {
                 name: "react",
@@ -215,29 +230,29 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: jobit,
-        source_code_link: "https://github.com/",
+        image: coffee,
+        source_code_link: "https://github.com/KseniyaMelnik/coffee-store",
     },
     {
-        name: "Trip Guide",
+        name: "Chuck Norris",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "Joke app for creating a poster with Chuck Norris jokes. You can control the jokes shown, view random jokes and add up to 10 jokes you like to your poster.",
         tags: [
             {
-                name: "nextjs",
+                name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "typescript",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "styled-components",
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
+        image: chuckNorris,
+        source_code_link: "https://github.com/KseniyaMelnik/ChuckNorris",
     },
 ];
 
